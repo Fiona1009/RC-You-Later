@@ -27,4 +27,5 @@ Il y a quelque assets dans le dossier des Models mais tu peux en importer d'autr
 - George Michael - Careless Whisper
 - [JKTimmons - Lovely Animals PACK](https://assetstore.unity.com/packages/3d/characters/animals/lovely-animals-pack-92629)
 - [pan.stasian - Heart-shaped cake](https://sketchfab.com/3d-models/heart-shaped-cake-9b22fc3dce074a8bae410a674a07d229)
-- [Sidra Max - Ice Cream](Car https://assetstore.unity.com/packages/3d/vehicles/land/ice-cream-car-low-poly-273130)
+- [Sidra Max - Ice Cream Car](https://assetstore.unity.com/packages/3d/vehicles/land/ice-cream-car-low-poly-273130)
+- [KartInnka - Buttons Set](https://assetstore.unity.com/packages/2d/gui/buttons-set-211824)
