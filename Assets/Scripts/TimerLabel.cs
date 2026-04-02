@@ -13,7 +13,7 @@ public class TimerLabel : MonoBehaviour
 
     private void Update()
     {
-        string text = $"Time: {Timer.ElapsedSeconds:F3} s";
+        string text = $"Time <3: {Timer.ElapsedSeconds:F3} s";
         int stepsCount = Timer.StepsCount;
 
         for (int index = 0; index < stepsCount; index++)
