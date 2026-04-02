@@ -10,7 +10,7 @@ Points bonus :
 3. **2 Points** : Trouve un moyen de ne sauvegarder le temps (et les étapes) du joueur seulement s'il bat le temps final record déjà sauvegardé.
 
 
-## 2ème Partie : Ça manque d'un certains *je ne sais quoi*..
+## 2ème Partie : Ça manque d'un certain *je ne sais quoi*..
 
 Ici c'est roue libre ! Genre vraiment roue libre avec une vibe keur
 
