@@ -19,7 +19,7 @@ Il y a quelque assets dans le dossier des Models mais tu peux en importer d'autr
 
 
 ### Ce que j'ai ajouté dans le projet : DE L'AMOUR
-- Assets : portails ✅, couleur global ✅, véhicule
+- Assets : portails ✅, couleur global ✅, véhicule ✅
 - Menus : menu principal, pause, fin
 - Gameplay : coeurs sur la route qui accélèrent 
 
@@ -27,4 +27,4 @@ Il y a quelque assets dans le dossier des Models mais tu peux en importer d'autr
 - George Michael - Careless Whisper
 - [JKTimmons - Lovely Animals PACK](https://assetstore.unity.com/packages/3d/characters/animals/lovely-animals-pack-92629)
 - [pan.stasian - Heart-shaped cake](https://sketchfab.com/3d-models/heart-shaped-cake-9b22fc3dce074a8bae410a674a07d229)
-- 
+- [Sidra Max - Ice Cream](Car https://assetstore.unity.com/packages/3d/vehicles/land/ice-cream-car-low-poly-273130)
