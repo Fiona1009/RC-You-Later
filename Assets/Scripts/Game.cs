@@ -6,10 +6,7 @@ using UnityEngine.SceneManagement;
 public class Game : MonoBehaviour
 {
     [SerializeField]
-    private GameObject tutorialPanel = null;
-
     private readonly float restartInputHoldTime = 0.25f;
-
     private float currentRestartInputHoldTime = 0.0f;
 
     private void Start()
@@ -20,9 +17,6 @@ public class Game : MonoBehaviour
 
     private void Gate_OnPassed(Gate gate)
     {
-        // First gate passed, disable tutorial.
-        tutorialPanel.SetActive(false);
-
         // Unregister itself.
         Gate.OnPassed -= Gate_OnPassed;
     }

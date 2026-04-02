@@ -18,6 +18,12 @@ public class ScenesManagement : MonoBehaviour
         SceneManager.LoadScene(sceneCredits);
     }
 
+    public void RetourMenu()
+    {
+        SceneManager.LoadScene("0_Menu");
+        Time.timeScale = 1f;
+    }
+
     public void QuitGame()
     {
         Application.Quit();
