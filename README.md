@@ -19,8 +19,9 @@ Il y a quelque assets dans le dossier des Models mais tu peux en importer d'autr
 
 
 ### Ce que j'ai ajouté dans le projet : DE L'AMOUR
-- Assets : portails ✅, couleur global ✅, véhicule ✅
-- Menus : menu principal, pause, fin
+- Assets : portails ✅, couleur global ✅, véhicule ✅, animaux mignons ✅
+- Menus : principal ✅, credits ✅, fin ✅
+- Musiques : menus, circuit ✅
 - Gameplay : coeurs sur la route qui accélèrent 
 
 ### Credits
