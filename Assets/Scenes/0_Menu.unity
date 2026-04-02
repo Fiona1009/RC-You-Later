@@ -752,7 +752,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 661.7, y: -347.5}
+  m_AnchoredPosition: {x: 661.7, y: -335}
   m_SizeDelta: {x: 506.1, y: 123.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &644941803
@@ -777,11 +777,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Movement: [Z/Q/S/D]
 
+    Pause: Escape
+
     Restart: Hold [R]
 
 
-    Timer begin when first
-    gate is crossed.
+    Timer
+    begin when first gate is crossed.
 
     Have fun <3'
   m_isRightToLeft: 0

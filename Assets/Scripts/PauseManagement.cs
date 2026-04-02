@@ -16,7 +16,7 @@ public class PauseManagement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (isPaused)
             {
@@ -43,4 +43,5 @@ public class PauseManagement : MonoBehaviour
         Time.timeScale = 1f;
         isPaused = false;
     }
+
 }
