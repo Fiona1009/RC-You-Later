@@ -52,13 +52,53 @@ public static class Timer
 
     public static void Save()
     {
-        // TODO : save our time steps (line 7 of this script) inside a file.
+        // Dossier "Saves" à la racine du projet
+        string folderPath = System.IO.Path.Combine(UnityEngine.Application.dataPath, "..", "Saves"); // Je répète System.IO au lieu de le mettre au début mais je crois que tu préfères comme ça
+        string filePath = System.IO.Path.Combine(folderPath, "score.txt"); // Je savais faire en JSON de base lol
+
+        // Crée le dossier s'il n'existe pas
+        if (!System.IO.Directory.Exists(folderPath))
+            System.IO.Directory.CreateDirectory(folderPath);
+
+        // Convertit les steps en texte (un par ligne)
+        List<string> lines = new List<string>();
+        foreach (long step in steps)
+            lines.Add(step.ToString()); // Inspiré de Python
+
+        // Écrit dans le fichier
+        System.IO.File.WriteAllLines(filePath, lines);
     }
+
 
     public static void Load()
     {
-        // TODO : load our time steps from a file (if we have any)
-        // and store them inside our steps variable (line 7 of this script)
-        // to show them to the player before starting a race.
+        // Dossier "Saves" à la racine du projet
+        string folderPath = System.IO.Path.Combine(UnityEngine.Application.dataPath, "..", "Saves");
+        string filePath = System.IO.Path.Combine(folderPath, "score.txt");
+
+        // Si le fichier n'existe pas, on ne fait rien
+        if (!System.IO.File.Exists(filePath))
+        {
+            UnityEngine.Debug.Log("Aucun fichier de score trouvé dommage.");
+            return;
+        }
+
+        // Vide les steps actuels
+        steps.Clear();
+
+        // Lit toutes les lignes
+        string[] lines = System.IO.File.ReadAllLines(filePath);
+
+        foreach (string line in lines)
+        {
+            if (long.TryParse(line, out long value))
+            {
+                steps.Add(value);
+            }
+            else
+            {
+                UnityEngine.Debug.LogWarning($"Ligne invalide dans score.txt : {line}");
+            }
+        }
     }
 }
