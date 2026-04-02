@@ -14,9 +14,17 @@ Points bonus :
 
 Ici c'est roue libre ! Genre vraiment roue libre avec une vibe keur
 
-Et aussi rajoute à la fin de ce fichier **README.md** ce que tu a rajouté dans le projet (afin que je sois sur de bien évaluer ce que tu a rajouté).
+Et aussi rajoute à la fin de ce fichier **README.md** ce que tu as rajouté dans le projet (afin que je sois sûr de bien évaluer ce que tu as rajouté).
 Il y a quelque assets dans le dossier des Models mais tu peux en importer d'autres (je te recommande à nouveau le site de [Kenney](https://kenney.nl/assets)).
 
 
 ### Ce que j'ai ajouté dans le projet : DE L'AMOUR
+- Assets : portails ✅, couleur global ✅, véhicule
+- Menus : menu principal, pause, fin
+- Gameplay : coeurs sur la route qui accélèrent 
+
+### Credits
+- George Michael - Careless Whisper
+- [JKTimmons - Lovely Animals PACK](https://assetstore.unity.com/packages/3d/characters/animals/lovely-animals-pack-92629)
+- [pan.stasian - Heart-shaped cake](https://sketchfab.com/3d-models/heart-shaped-cake-9b22fc3dce074a8bae410a674a07d229)
 - 
