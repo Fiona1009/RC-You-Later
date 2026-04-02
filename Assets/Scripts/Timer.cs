@@ -95,10 +95,6 @@ public static class Timer
             {
                 steps.Add(value);
             }
-            else
-            {
-                UnityEngine.Debug.LogWarning($"Ligne invalide dans score.txt : {line}");
-            }
         }
     }
 }

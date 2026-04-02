@@ -1,4 +1,7 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
+
 
 public class Circuit : MonoBehaviour
 {
@@ -60,6 +63,9 @@ public class Circuit : MonoBehaviour
                 Timer.Step();
                 Timer.Stop();
                 Timer.Save();
+
+                // charge une scène après délai
+                StartCoroutine(LoadSceneAfterDelay("3_End", 5f));
             }
             else
             {
@@ -95,6 +101,13 @@ public class Circuit : MonoBehaviour
             nextGate.ActivateGate(true);
         }
     }
+
+    private IEnumerator LoadSceneAfterDelay(string sceneFin, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(sceneFin);
+    }
+
 
 #if UNITY_EDITOR
     private void OnDrawGizmos()
