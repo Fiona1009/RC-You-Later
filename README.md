@@ -22,7 +22,7 @@ Il y a quelque assets dans le dossier des Models mais tu peux en importer d'autr
 - Assets : portails ✅, couleur global ✅, véhicule ✅, animaux mignons ✅
 - Menus : principal ✅, credits ✅, fin ✅
 - Musiques : menus, circuit ✅
-- Gameplay : coeurs sur la route qui accélèrent 
+- Gameplay : coeurs sur la route qui font accélérer le véhicule s'il entre en collision avec les coeurs ✅
 
 ### Credits
 - George Michael - Careless Whisper
