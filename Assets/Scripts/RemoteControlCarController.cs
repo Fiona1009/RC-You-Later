@@ -73,6 +73,12 @@ public class RemoteControlCarController : MonoBehaviour
     private float groundContactGracePeriod = 0.2f;
     private float lastGroundContactPointTime = 0.0f;
 
+
+    private float speedBoostMultiplier = 1f;
+    private float speedBoostEndTime = 0f;
+
+
+
     public Vector3 GravityDirection
     {
         get
@@ -121,6 +127,13 @@ public class RemoteControlCarController : MonoBehaviour
         // Player/Move
         playerMoveAction = InputSystem.actions.FindAction("351f2ccd-1f9f-44bf-9bec-d62ac5c5f408", true);
     }
+
+    public void ApplySpeedBoost(float multiplier, float duration)
+    {
+        speedBoostMultiplier = multiplier;
+        speedBoostEndTime = Time.time + duration;
+    }
+
 
     private void GetComponentsIFN()
     {
@@ -201,7 +214,10 @@ public class RemoteControlCarController : MonoBehaviour
             // Motor Force //
             if (playerMoveInput.y > 0.01f)
             {
-                float motorForce = motorPowerOverForwardSpeed.Evaluate(forwardVelocity) * playerMoveInput.y;
+                float motorForce = motorPowerOverForwardSpeed.Evaluate(forwardVelocity)
+                   * playerMoveInput.y
+                   * speedBoostMultiplier;
+
                 rigidbody.AddForce(motorForce * ForwardDirection);
             }
             // Breaking Force/Motor //
@@ -265,6 +281,13 @@ public class RemoteControlCarController : MonoBehaviour
 
         // Update previous linear velocity.
         previousLinearVelocity = rigidbody.linearVelocity;
+
+        // Reset boost when time is over
+        if (Time.time > speedBoostEndTime)
+        {
+            speedBoostMultiplier = 1f;
+        }
+
     }
 
     private void Update()
