@@ -3,9 +3,9 @@
 
 ## 1ère Partie : Sauvons le temps !
 
-1 & 2 done ✅
-3 bonus done ✅
-4 bonus pas fait
+1 & 2 done ✅ <br>
+3 bonus done ✅ <br>
+4 bonus pas fait <br>
 
 ## 2ème Partie : Ça manque d'un certain *je ne sais quoi*..
 
