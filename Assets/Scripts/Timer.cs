@@ -26,6 +26,13 @@ public static class Timer
         return steps[index] * 0.001f;
     }
 
+    // Pour la partie bonus où ça sauvegarde uniquement le meilleur temps, là faut créer une méthode pour pouvoir comparer
+    public static long GetFinalTime()
+    {
+        return stopwatch.ElapsedMilliseconds;
+    }
+
+
     /// <summary>
     /// Reset the timer and remove any steps.
     /// </summary>
@@ -56,17 +63,41 @@ public static class Timer
         string folderPath = System.IO.Path.Combine(UnityEngine.Application.dataPath, "..", "Saves"); // Je répète System.IO au lieu de le mettre au début mais je crois que tu préfères comme ça
         string filePath = System.IO.Path.Combine(folderPath, "score.txt"); // Je savais faire en JSON de base lol
 
+        // Charge l'ancien record s'il existe pour pouvoir comparer avec le nouveau score
+        long oldRecord = long.MaxValue;
+
+        if (System.IO.File.Exists(filePath))
+        {
+            string[] lines = System.IO.File.ReadAllLines(filePath);
+
+            if (lines.Length > 0 && long.TryParse(lines[lines.Length - 1], out long lastStep))
+            {
+                oldRecord = lastStep; // Le dernier step = temps final
+            }
+        }
+
+        long newRecord = GetFinalTime();
+
+        // Vérifier si le nouveau score est meilleur
+        if (newRecord >= oldRecord)
+        {
+            UnityEngine.Debug.Log("No new record.");
+            return;
+        }
+
+        UnityEngine.Debug.Log("New record ! Saving...");
+
         // Crée le dossier s'il n'existe pas
         if (!System.IO.Directory.Exists(folderPath))
             System.IO.Directory.CreateDirectory(folderPath);
 
         // Convertit les steps en texte (un par ligne)
-        List<string> lines = new List<string>();
+        List<string> linesToSave = new List<string>();
         foreach (long step in steps)
-            lines.Add(step.ToString()); // Inspiré de Python
+            linesToSave.Add(step.ToString()); // Inspiré de Python
 
         // Écrit dans le fichier
-        System.IO.File.WriteAllLines(filePath, lines);
+        System.IO.File.WriteAllLines(filePath, linesToSave);
     }
 
 
@@ -79,7 +110,7 @@ public static class Timer
         // Si le fichier n'existe pas, on ne fait rien
         if (!System.IO.File.Exists(filePath))
         {
-            UnityEngine.Debug.Log("Aucun fichier de score trouvé dommage.");
+            UnityEngine.Debug.Log("No savefile found, too bad.");
             return;
         }
 
