@@ -3383,10 +3383,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gate (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 7647627711812161091, guid: b99f6221d336931429097751281af2f8, type: 3}
-      propertyPath: nextGate
-      value: 
-      objectReference: {fileID: 1551371075}
     - target: {fileID: 8111744181983726311, guid: b99f6221d336931429097751281af2f8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 205.9
