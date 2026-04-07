@@ -16,10 +16,10 @@ Il y a quelque assets dans le dossier des Models mais tu peux en importer d'autr
 
 
 ### Ce que j'ai ajouté dans le projet : DE L'AMOUR
-- Assets : portails ✅, couleur global ✅, véhicule ✅, animaux mignons ✅
-- Menus : principal ✅, credits ✅, fin ✅
-- Musiques : menus, circuit ✅
-- Gameplay : coeurs sur la route qui font accélérer le véhicule s'il entre en collision avec les coeurs ✅
+- Assets : portails, couleur global, véhicule, animaux mignons
+- Menus : principal, credits, fin
+- Musiques : menus, circuit
+- Gameplay : coeurs sur la route qui font accélérer le véhicule s'il entre en collision avec les coeurs
 
 ### Credits
 - George Michael - Careless Whisper
@@ -27,3 +27,4 @@ Il y a quelque assets dans le dossier des Models mais tu peux en importer d'autr
 - [pan.stasian - Heart-shaped cake](https://sketchfab.com/3d-models/heart-shaped-cake-9b22fc3dce074a8bae410a674a07d229)
 - [Sidra Max - Ice Cream Car](https://assetstore.unity.com/packages/3d/vehicles/land/ice-cream-car-low-poly-273130)
 - [KartInnka - Buttons Set](https://assetstore.unity.com/packages/2d/gui/buttons-set-211824)
+- random jazz song on youtube
