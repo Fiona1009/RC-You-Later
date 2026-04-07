@@ -1279,6 +1279,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1606302205}
+  - component: {fileID: 1606302206}
   - component: {fileID: 1606302204}
   m_Layer: 0
   m_Name: Audio
@@ -1399,6 +1400,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1606302206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606302203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8f20faf523e7d94cb118cd240ae9301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Music
+  audioSource: {fileID: 1606302204}
+  musicMenus: {fileID: 8300000, guid: 2081d2a8a946e994d94de952e43fd515, type: 3}
+  musicMain: {fileID: 8300000, guid: 6929c9fe608912c4ea90984019a6181e, type: 3}
+  musicEnd: {fileID: 8300000, guid: 35a415ee030ae7c409c8a7df387efbe3, type: 3}
 --- !u!1 &1733180760
 GameObject:
   m_ObjectHideFlags: 0

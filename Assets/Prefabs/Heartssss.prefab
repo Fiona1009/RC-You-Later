@@ -127,5 +127,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hearts
   floatSpeed: 3
   floatAmplitude: 0.4
-  boostMultiplier: 2
+  boostMultiplier: 4
   boostDuration: 2
