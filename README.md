@@ -9,7 +9,7 @@
 
 ## 2ème Partie : Ça manque d'un certain *je ne sais quoi*..
 
-Ici c'est roue libre ! Genre vraiment roue libre avec une vibe keur keur xoxo
+Ici c'est roue libre ! *Genre vraiment roue libre avec une vibe keur keur xoxo*
 
 Et aussi rajoute à la fin de ce fichier **README.md** ce que tu as rajouté dans le projet (afin que je sois sûr de bien évaluer ce que tu as rajouté).
 Il y a quelque assets dans le dossier des Models mais tu peux en importer d'autres (je te recommande à nouveau le site de [Kenney](https://kenney.nl/assets)).
